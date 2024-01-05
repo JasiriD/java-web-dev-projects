@@ -32,7 +32,7 @@ public class BalancedBrackets {
                 break;
             }
         }
-        if(firstBracket == true) {
+        if(firstBracket) {
             for (char ch : str.toCharArray()) {
                 if (ch == '[') {
                     brackets++;
