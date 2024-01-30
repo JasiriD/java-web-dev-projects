@@ -2,6 +2,7 @@ package org.launchcode;
 import java.util.Scanner;
 
 import static org.launchcode.Circle.getArea;
+import static org.launchcode.Circle.swagNigga;
 
 public class Area {
     public static void main(String[] args) {
@@ -13,11 +14,28 @@ public class Area {
 
         System.out.println("Enter a radius:");
 
+        //Initializing radius variable
         double radius;
+
+        //Setting radius to the input collected by the user
         radius = input.nextDouble();
 
-        double area = getArea(radius);
 
-        System.out.println("The area of a circle with the radius " + radius + " is " + area);
+
+        //Calling getArea from the Circle class within Circle.java
+
+        //Conditional to check that radius is greater than 0
+        if(radius > 0){
+            double area = getArea(radius);
+            String swag = swagNigga(radius);
+
+            //Final output
+            System.out.println("The area of a circle with the radius " + radius + " is " + area);
+            System.out.println("also " + swag);
+        }
+        else{
+            System.out.println("Your radius cannot be negative.");
+        }
+
     }
 }
