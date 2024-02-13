@@ -27,11 +27,9 @@ public class Area {
         //Conditional to check that radius is greater than 0
         if(radius > 0){
             double area = getArea(radius);
-            String swag = swagNigga(radius);
 
             //Final output
             System.out.println("The area of a circle with the radius " + radius + " is " + area);
-            System.out.println("also " + swag);
         }
         else{
             System.out.println("Your radius cannot be negative.");
